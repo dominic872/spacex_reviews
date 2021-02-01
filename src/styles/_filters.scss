@@ -1,0 +1,32 @@
+div.filter-group {
+  background: $white;
+  margin: 10px 0;
+
+  & span {
+    display: inline-block;
+    border-bottom: 1px solid $darkgrey;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  & div {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  & .btn.btn-success.btn-sm,
+  .btn-group-sm > .btn.btn-success {
+    margin: 8px 20px;
+    min-width: 70px;
+    background: $lightgreen;
+    color: $darkgrey;
+  }
+
+  & .btn.btn-success:focus,
+  .btn.btn-success.focus,
+  .btn.btn-success:hover,
+  .btn.btn-success.hover {
+    background-color: $darkgreen;
+    color: $white;
+  }
+}
