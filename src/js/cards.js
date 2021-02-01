@@ -1,5 +1,4 @@
 const cards = () => {
-
   const paintCard = function () {
     let url = "https://api.spaceXdata.com/v3/launches?limit=100";
 
@@ -24,8 +23,7 @@ const cards = () => {
       );
     }
 
-
-     url = "./data/json.json";
+    url = "./data/json.json";
 
     ajax_get(url, function (data) {
       let out = "";
@@ -63,7 +61,6 @@ const cards = () => {
     });
   };
 
-
   for (let iIndex = 0; iIndex < content.length; iIndex++) {
     content[iIndex].addEventListener("click", paintCard);
   }
@@ -75,9 +72,7 @@ const cards = () => {
       if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         console.log("responseText:" + xmlhttp.responseText);
         try {
-
           const data = JSON.parse(xmlhttp.responseText);
-
         } catch (err) {
           console.log(err.message + " in " + xmlhttp.responseText);
           return;

@@ -20,3 +20,4 @@
   </div>
 </body>
 </html>
+<link href="js/main.bundle.css" rel="stylesheet">
