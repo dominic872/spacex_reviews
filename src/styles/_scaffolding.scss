@@ -1,0 +1,17 @@
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  background: $lightgrey;
+  max-width: 1440px;
+}
+.container-fluid h1,
+.container-sm h1,
+.container-md h1,
+.container-lg h1,
+.container-xl h1 {
+  font-size: $font-b;
+  color: $darkgrey;
+  font-weight: bold;
+}
