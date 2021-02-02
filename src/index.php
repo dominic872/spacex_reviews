@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 
   <link href="styles/style.css" rel="stylesheet">
-<link rel="icon" href="/favicon.png"><script defer src="/js/main.bundle.js"></script><link href="/styles/style.css" rel="stylesheet"></head>
+</head>
 <body>
   <div class="container-fluid">
     <h1 id="test">SpaceX Launch Programs</h1>    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
@@ -20,4 +20,4 @@
   </div>
 </body>
 </html>
-<link href="js/main.bundle.css" rel="stylesheet">
+<script src="js/main.bundle.js"></script>

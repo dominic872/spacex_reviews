@@ -50,15 +50,15 @@ module.exports = {
       ],
     }),
 
-
-    // Generates an HTML file from a template
-    // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
-    new HtmlWebpackPlugin({
-      title: 'Spacex Poc',
-      favicon: paths.src + '/images/favicon.png',
-      template: paths.src + '/template.php', // template file
-      filename: 'index.php', // output file
-    }),
+    // 
+    // // Generates an HTML file from a template
+    // // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
+    // new HtmlWebpackPlugin({
+    //   title: 'Spacex Poc',
+    //   favicon: paths.src + '/images/favicon.png',
+    //   template: paths.src + '/template.php', // template file
+    //   filename: 'index.php', // output file
+    // }),
 
     // ESLint configuration
     new ESLintPlugin({

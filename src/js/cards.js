@@ -1,7 +1,7 @@
 const cards = () => {
-  const paintCard = function () {
+  const content = document.querySelectorAll(".filters button");
+  var paintCards = function () {
     let url = "https://api.spaceXdata.com/v3/launches?limit=100";
-
     if (this.parentElement.className === "successful-landing") {
       url +=
         "&launch_success=true&land_success=" + this.innerText.toLowerCase();
@@ -60,9 +60,8 @@ const cards = () => {
       document.getElementsByClassName("product-group")[0].innerHTML = out;
     });
   };
-
   for (let iIndex = 0; iIndex < content.length; iIndex++) {
-    content[iIndex].addEventListener("click", paintCard);
+    content[iIndex].addEventListener("click", paintCards);
   }
 
   const ajax_get = function (url, callback) {
@@ -72,7 +71,7 @@ const cards = () => {
       if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         console.log("responseText:" + xmlhttp.responseText);
         try {
-          const data = JSON.parse(xmlhttp.responseText);
+          var data = JSON.parse(xmlhttp.responseText);
         } catch (err) {
           console.log(err.message + " in " + xmlhttp.responseText);
           return;
@@ -85,4 +84,4 @@ const cards = () => {
     xmlhttp.send();
   };
 };
-export default myScript;
+export default cards;
